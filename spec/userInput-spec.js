@@ -1,5 +1,5 @@
 import UserObject from './../src/UserObject.js';
-import { findExpirationDate } from './../src/functions.js';
+import { findExpirationDate, findAge } from './../src/functions.js';
 
 // User Object Tests
 
@@ -61,5 +61,14 @@ describe('findExpirationDate', function() {
     let testInput = 30;
     let returnedDate = findExpirationDate(testInput);
     expect(returnedDate.getFullYear()).toEqual(2048);
+  });
+});
+
+describe('findAge', function() {
+
+  it('should check if age is accurate', function() {
+    let testInput = new Date(new Date().setFullYear(1998));
+    let returnedAge = findAge(testInput);
+    expect(returnedAge).toEqual(20);
   });
 });
