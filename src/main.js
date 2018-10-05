@@ -8,6 +8,5 @@ $(document).ready(function() {
   $('form').submit(function(event) {
     event.preventDefault();
     const userAge = $("form input").val();
-    console.log(userAge);
-  })
+  });
 });
