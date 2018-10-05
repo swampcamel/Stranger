@@ -4,7 +4,7 @@ export function findExpirationDate(yearsLeft) {
 }
 
 export function findAge(birthdate) {
-  let newAge = new Date().getFullYear() - birthdate.getFullYear();
+  let newAge = new Date().getFullYear() - new Date(birthdate).getFullYear();
   return newAge;
   // not to be confused with the popular yuppie movement
 }

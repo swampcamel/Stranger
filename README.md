@@ -20,6 +20,8 @@ Stranger in Strange Lands is a calculator app that takes a user's age and life e
 | Returns years user has lived past their life expectancy |  User's Life Expectancy | User's amount of time past Life Expectancy |
 |----------|-------|--------|
 | Displays Date of Expected Death on Earth |  User's Life Expectancy and Age | Date of Expiration |
+|----------|-------|--------|
+| Allows user to choose a birthdate to calculate the above | User's Date of Birth | User's Age |
 
 ## Setup
 

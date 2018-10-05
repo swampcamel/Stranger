@@ -3,16 +3,21 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import UserObject from './UserObject.js';
-import { findExpirationDate } from './functions.js';
+import { findExpirationDate, findAge } from './functions.js';
 
 $(document).ready(function() {
   $('form').submit(function(event) {
     event.preventDefault();
-    let ageInput = $("#ageInput").val();
+    // Grab Inputs
+    let dobInput = $("#dob").val();
     let expectancyInput = $("#expectancyInput").val();
-    let userInfo = new UserObject(ageInput, expectancyInput);
+    // Calculate Age and create object containing user values for age on different planets
+    let foundAge = findAge(dobInput);
+    let userInfo = new UserObject(foundAge, expectancyInput);
+    // Determine the date on earth of when the user will die
     let expirationDate = findExpirationDate(userInfo.earthLife);
 
+    // Outputs
     $('#earth-age').text(userInfo.earthAge);
     $('#mercury-age').text(userInfo.mercuryAge);
     $('#venus-age').text(userInfo.venusAge);
