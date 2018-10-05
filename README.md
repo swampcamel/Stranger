@@ -17,6 +17,8 @@ Stranger in Strange Lands is a calculator app that takes a user's age and life e
 | Calculates user's life expectancy on aforementioned planets | Input: User's Life Expectancy | Output: User's Life Expectancy on Mercury, Venus, Mars & Jupiter |
 |----------|-------|--------|
 | Returns years user has lived past their life expectancy | Input: User's Life Expectancy | Output: User's amount of time past Life Expectancy |
+|----------|-------|--------|
+| Displays Date of Expected Death on Earth | Input: User's Life Expectancy and Age | Output: Date of Expiration |
 
 ## Setup
 
