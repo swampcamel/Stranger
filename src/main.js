@@ -3,21 +3,24 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import UserObject from './UserObject.js';
-import { findExpirationDate, findAge } from './functions.js';
+import { findExpirationDate, findAge, findBirthdays } from './functions.js';
 
 $(document).ready(function() {
   $('form').submit(function(event) {
     event.preventDefault();
     // Grab Inputs
     let dobInput = $("#dob").val();
-    let expectancyInput = $("#expectancyInput").val();
+    let expInput = $("#expectancyInput").val();
 
     // Calculate Age and create usable variables
     let jsDob = new Date(dobInput);
     let foundAge = findAge(dobInput);
-    let userInfo = new UserObject(foundAge, expectancyInput);
+    console.log(foundAge)
+    let userInfo = new UserObject(foundAge, expInput);
     // Determine the date on earth of when the user will die
     let expirationDate = findExpirationDate(userInfo.earthLife);
+    console.log(userInfo);
+    let birthdays = findBirthdays(jsDob);
 
     // Outputs
     $('#earth-age').text(userInfo.earthAge);
@@ -25,6 +28,11 @@ $(document).ready(function() {
     $('#venus-age').text(userInfo.venusAge);
     $('#mars-age').text(userInfo.marsAge);
     $('#jupiter-age').text(userInfo.jupiterAge);
+
+    birthdays.forEach(function(date, index) {
+      console.log(index);
+      $('#bd'+ index).text(date);
+    });
 
     if ( userInfo.earthLife > 0 ) {
       $('#expirationDate').text(expirationDate);
