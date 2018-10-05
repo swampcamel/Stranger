@@ -1,4 +1,4 @@
-import UserAge from './../src/AgeConverter.js';
+import UserObject from './../src/UserObject.js';
 
 describe('userAge', function() {
 
