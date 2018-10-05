@@ -1,20 +1,24 @@
-# Project Title
+# Stranger in Strange Lands
 
-#### Epicodus JavaScript exercise, Date
+#### A JS application demonstrating use of testing and development environments, 10-5-2018
 
-#### By Your Name Here
+#### By Dan Mace
 
 ## Description
 
-Add description here
+Stranger in Strange Lands is a calculator app that takes a user's age and life expectancy and returns new values that correspond with their age and life expectancy on various planets.
 
 ## Specs
 
-| Behavior | Input | Output |
+| Calculates user's current age on Mercury | Input: User's Age | Output: User's Age on Mercury |
 |----------|-------|--------|
-| Behavior | input | output |
+| Calculates user's current age on Mercury, Venus, Mars and Jupiter | Input: User's Age | Output: User's Age on Mercury, Venus, Mars & Jupiter |
+|----------|-------|--------|
+| Calculates user's life expectancy on aforementioned planets | Input: User's Life Expectancy | Output: User's Life Expectancy on Mercury, Venus, Mars & Jupiter |
+|----------|-------|--------|
+| Returns years user has lived past their life expectancy | Input: User's Life Expectancy | Output: User's amount of time past Life Expectancy |
 
-## Setup on OSX
+## Setup
 
 * Install Node.js
 * Install karma-cli globally: `npm install -g karma-cli`
@@ -45,10 +49,10 @@ Add description here
 
 ## Links
 
-* Add links here
+* https://github.com/swampcamel/Stranger
 
 ## License
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Your Name Here**
+Copyright (c) 2018 **Daniel Mace**
