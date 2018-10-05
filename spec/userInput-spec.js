@@ -9,22 +9,22 @@ describe('UserObject', function() {
 
   it('should test if calculation of Terran Age to Mercurial Age is accurate', function() {
     let userInfo = new UserObject(20);
-    expect(userInfo.mercuryAge).toEqual(parseFloat(4.80).toFixed(2));
+    expect(userInfo.mercuryAge).toEqual(parseFloat(83.33).toFixed(2));
   });
 
   it('should test if calculation of Terran Age to Venusian Age is accurate', function() {
     let userInfo = new UserObject(20);
-    expect(userInfo.venusAge).toEqual(parseFloat(12.40).toFixed(2));
+    expect(userInfo.venusAge).toEqual(parseFloat(32.26).toFixed(2));
   });
 
   it('should test if calculation of Terran Age to Martian Age is accurate', function() {
     let userInfo = new UserObject(20);
-    expect(userInfo.marsAge).toEqual(parseFloat(37.60).toFixed(2));
+    expect(userInfo.marsAge).toEqual(parseFloat(10.64).toFixed(2));
   });
 
   it('should test if calculation of Terran Age to Jovian Age is accurate', function() {
     let userInfo = new UserObject(20);
-    expect(userInfo.jupiterAge).toEqual(parseFloat(237.20).toFixed(2));
+    expect(userInfo.jupiterAge).toEqual(parseFloat(1.69).toFixed(2));
   });
 
   // Tests on Life Expectancy Key Value Pairs
@@ -36,22 +36,22 @@ describe('UserObject', function() {
 
   it('should test if calculation of years left on Mercury is correct', function() {
     let userInfo = new UserObject(20);
-    expect(userInfo.mercuryLife).toEqual(parseFloat(14.40).toFixed(2));
+    expect(userInfo.mercuryLife).toEqual(parseFloat(250.00).toFixed(2));
   });
 
   it('should test if calculation of years left on Venus is correct', function() {
     let userInfo = new UserObject(20);
-    expect(userInfo.venusLife).toEqual(parseFloat(37.20).toFixed(2));
+    expect(userInfo.venusLife).toEqual(parseFloat(96.77).toFixed(2));
   });
 
   it('should test if calculation of years left on Mars is correct', function() {
     let userInfo = new UserObject(20);
-    expect(userInfo.marsLife).toEqual(parseFloat(112.80).toFixed(2));
+    expect(userInfo.marsLife).toEqual(parseFloat(31.91).toFixed(2));
   });
 
   it('should test if calculation of years left on Jupiter is correct', function() {
     let userInfo = new UserObject(20);
-    expect(userInfo.jupiterLife).toEqual(parseFloat(711.60).toFixed(2));
+    expect(userInfo.jupiterLife).toEqual(parseFloat(5.06).toFixed(2));
   });
 });
 
