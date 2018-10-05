@@ -9,16 +9,17 @@
 Stranger in Strange Lands is a calculator app that takes a user's age and life expectancy and returns new values that correspond with their age and life expectancy on various planets.
 
 ## Specs
-
-| Calculates user's current age on Mercury | Input: User's Age | Output: User's Age on Mercury |
+| Expected Action | Input | Output |
 |----------|-------|--------|
-| Calculates user's current age on Mercury, Venus, Mars and Jupiter | Input: User's Age | Output: User's Age on Mercury, Venus, Mars & Jupiter |
+| Calculates user's current age on Mercury | User's Age | User's Age on Mercury |
 |----------|-------|--------|
-| Calculates user's life expectancy on aforementioned planets | Input: User's Life Expectancy | Output: User's Life Expectancy on Mercury, Venus, Mars & Jupiter |
+| Calculates user's current age on Mercury, Venus, Mars and Jupiter |  User's Age | User's Age on Mercury, Venus, Mars & Jupiter |
 |----------|-------|--------|
-| Returns years user has lived past their life expectancy | Input: User's Life Expectancy | Output: User's amount of time past Life Expectancy |
+| Calculates user's life expectancy on aforementioned planets |  User's Life Expectancy | User's Life Expectancy on Mercury, Venus, Mars & Jupiter |
 |----------|-------|--------|
-| Displays Date of Expected Death on Earth | Input: User's Life Expectancy and Age | Output: Date of Expiration |
+| Returns years user has lived past their life expectancy |  User's Life Expectancy | User's amount of time past Life Expectancy |
+|----------|-------|--------|
+| Displays Date of Expected Death on Earth |  User's Life Expectancy and Age | Date of Expiration |
 
 ## Setup
 
