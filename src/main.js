@@ -11,7 +11,9 @@ $(document).ready(function() {
     // Grab Inputs
     let dobInput = $("#dob").val();
     let expectancyInput = $("#expectancyInput").val();
-    // Calculate Age and create object containing user values for age on different planets
+
+    // Calculate Age and create usable variables
+    let jsDob = new Date(dobInput);
     let foundAge = findAge(dobInput);
     let userInfo = new UserObject(foundAge, expectancyInput);
     // Determine the date on earth of when the user will die
